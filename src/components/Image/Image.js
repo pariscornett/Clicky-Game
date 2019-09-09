@@ -1,8 +1,10 @@
 import React from "react";
+import "./style.css";
 
 function Image(props) {
+
     return (
-        <div className="clicky-image">
+        <div className="clickyImage">
             <img alt={props.name} src={props.image} />
         </div>
     );
