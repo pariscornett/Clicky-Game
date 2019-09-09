@@ -5,7 +5,7 @@ function Image(props) {
 
     return (
         <div className="clickyImage">
-            <img alt={props.name} src={props.image} />
+            <img alt={props.name} src={props.image} onClick={props.handleIncrement}/>
         </div>
     );
 }

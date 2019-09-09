@@ -23,8 +23,9 @@ export default class Counter extends Component {
                 </div>
                 {
                 images.map(image => 
-                <Image
+                <Image 
                     image={image.image}
+                    handleIncrement={this.handleIncrement}
                 />
                 )}
             </div>
