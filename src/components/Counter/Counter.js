@@ -11,11 +11,22 @@ export default class Counter extends Component {
         clickedImages: []
     };
     
-    //determine if image has been clicked yet and score game
+    //adds clicked images to an array
     handleClick = (e) => {
         e.preventDefault();
         let imageId = e.target.id
         console.log(imageId);
+        if(this.state.clickedImages.includes(imageId)) {
+            alert("You've already clicked this one!");
+            this.setState({
+                count: 0,
+                clickedImages: []
+            })
+        }else {
+            this.setState({
+                count: this.state.count + 1
+            });
+        };
         this.state.clickedImages.push(imageId);
         console.log(this.state.clickedImages);
     };
