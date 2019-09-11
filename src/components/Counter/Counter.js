@@ -63,8 +63,8 @@ export default class Counter extends Component {
                         </div>
                     </div>
                 </div>
-                <div className="row">
-                    <div className="col-md-3">
+                <div>
+                    <div >
                         {
                         images.map(image => 
                         <Image 
