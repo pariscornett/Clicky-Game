@@ -7,6 +7,7 @@ import "./style.css";
 export default class Counter extends Component {
     //set click score to 0
     state = {
+        images,
         count: 0,
         clickedImages: [],
         highScore: 0,
@@ -33,11 +34,20 @@ export default class Counter extends Component {
             this.setState({
                 count: this.state.count + 1
             });
-
+            this.handleRandomImage(images);
         };
         this.state.clickedImages.push(imageId);
         console.log(this.state.clickedImages);
     };
+
+    //renders random image from images.json
+    handleRandomImage = (arr) => {
+        for (let i = arr.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [arr[i], arr[j]] = [arr[j], arr[i]];
+        }
+        return arr;
+    }
 
 
     render() {
