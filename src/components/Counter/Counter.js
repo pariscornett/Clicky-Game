@@ -56,15 +56,12 @@ export default class Counter extends Component {
                 <div className="row">
                     <div className="col-md-12">
                         <div className="counter">
-                            Click Counter : {this.state.count}
-                        </div>
-                        <div className="highScore">
-                        High Score: {this.state.highScore}
+                           <span id="clicks">Click Counter : {this.state.count}</span> <span id="highScore"> High Score: {this.state.highScore}</span> 
+                    
                         </div>
                     </div>
                 </div>
-                <div>
-                    <div >
+                    <div>
                         {
                         images.map(image => 
                         <Image 
@@ -75,7 +72,6 @@ export default class Counter extends Component {
                         />
                         )};
                     </div>
-                </div>
             </div>
         )
     }

@@ -1,5 +1,7 @@
 img{
     float: left;
+    position:relative;
+    left: 100px;
     height:180px;
     width:200px;
     margin: 1em;

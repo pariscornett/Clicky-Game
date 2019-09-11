@@ -1,0 +1,18 @@
+#image{
+   position:relative;
+   top: -30px;
+   text-align:center;
+   background-image: url("../../sicksadworld.png");
+   height: 400px;
+   width: 498px;
+   border-radius: 140px;
+}
+
+#title {
+   position:relative;
+   top: 100px;
+   font-family: 'Luckiest Guy', cursive;
+   color: #fe93ca;
+   font-size: 20px;
+}
+
