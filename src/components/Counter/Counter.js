@@ -8,10 +8,11 @@ export default class Counter extends Component {
     //set click score to 0
     state = {
         count: 0,
-        clickedImages: []
+        clickedImages: [],
+        highScore: 0,
     };
     
-    //adds clicked images to an array
+    //adds clicked images to an array and recognizes duplicate clicks
     handleClick = (e) => {
         e.preventDefault();
         let imageId = e.target.id
@@ -22,10 +23,17 @@ export default class Counter extends Component {
                 count: 0,
                 clickedImages: []
             })
-        }else {
+            if(this.state.highScore < this.state.count) {
+                this.setState({
+                    highScore: this.state.count
+                })
+            }
+        }
+        else {
             this.setState({
                 count: this.state.count + 1
             });
+
         };
         this.state.clickedImages.push(imageId);
         console.log(this.state.clickedImages);
@@ -39,6 +47,9 @@ export default class Counter extends Component {
                     <div className="col-md-12">
                         <div className="counter">
                             Click Counter : {this.state.count}
+                        </div>
+                        <div className="highScore">
+                        High Score: {this.state.highScore}
                         </div>
                     </div>
                 </div>
