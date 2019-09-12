@@ -1,6 +1,5 @@
 .counter {
     text-align:center;
-    font-size: 30px;
     color: white;
     padding: 20px;
     border-radius: 15px;
@@ -10,6 +9,7 @@
     font-family: 'Luckiest Guy', cursive;
     display: inline-block;
     position: relative;
-    top: -500px;
+    top: -550px;
     color: #fe93ca;
+    font-size: 50px;
 }
