@@ -1,6 +1,6 @@
 #image{
    position:relative;
-   top: -30px;
+   top: -230px;
    text-align:center;
    background-image: url("../../sicksadworld.png");
    height: 400px;
@@ -10,9 +10,10 @@
 
 #title {
    position:relative;
+   text-align: center;
    top: 100px;
    font-family: 'Luckiest Guy', cursive;
    color: #fe93ca;
-   font-size: 20px;
+   font-size: 50px;
 }
 

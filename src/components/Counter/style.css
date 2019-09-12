@@ -2,10 +2,14 @@
     text-align:center;
     font-size: 30px;
     color: white;
-    background-color: purple;
     padding: 20px;
+    border-radius: 15px;
 }
 
 #clicks, #highScore {
-    padding: 100px;
+    font-family: 'Luckiest Guy', cursive;
+    display: inline-block;
+    position: relative;
+    top: -500px;
+    color: #fe93ca;
 }

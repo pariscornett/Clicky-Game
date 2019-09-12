@@ -54,10 +54,9 @@ export default class Counter extends Component {
         return (
             <div className="container">
                 <div className="row">
-                    <div className="col-md-12">
+                    <div className="offset-md-9 col-md-3">
                         <div className="counter">
-                           <span id="clicks">Click Counter : {this.state.count}</span> <span id="highScore"> High Score: {this.state.highScore}</span> 
-                    
+                           <span id="clicks">Clicks:{this.state.count}</span> <span id="highScore"> High Score: {this.state.highScore}</span> 
                         </div>
                     </div>
                 </div>

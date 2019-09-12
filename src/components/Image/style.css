@@ -1,9 +1,12 @@
 img{
     float: left;
     position:relative;
-    left: 100px;
+    top: -350px;
+    left: 75px;
     height:180px;
     width:200px;
     margin: 1em;
+    border-radius: 50px;
+    box-shadow: 5px 5px 5px 5px;
 };
 
